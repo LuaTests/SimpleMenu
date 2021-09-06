@@ -1,0 +1,378 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Roundify = Instance.new("ImageLabel")
+local version = Instance.new("TextLabel")
+local Noclip = Instance.new("TextLabel")
+local Roundify_2 = Instance.new("ImageLabel")
+local Fly = Instance.new("TextLabel")
+local Roundify_3 = Instance.new("ImageLabel")
+local Menu = Instance.new("TextLabel")
+local Roundify_4 = Instance.new("ImageLabel")
+local Roundify_5 = Instance.new("ImageLabel")
+local Title_2 = Instance.new("TextLabel")
+local Menu_2 = Instance.new("TextLabel")
+local Fly_2 = Instance.new("TextLabel")
+local Noclip_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.618038714, 0, 0.284153581, 0)
+main.Size = UDim2.new(0, 281, 0, 331)
+main.ZIndex = 70
+main.Active = true
+main.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = main
+Title.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(1, 0, 0.0815709978, 0)
+Title.ZIndex = 71
+Title.Font = Enum.Font.DenkOne
+Title.LineHeight = 1.050
+Title.Text = "  Atty Simple Menu"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextTransparency = 1.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Roundify.Name = "Roundify"
+Roundify.Parent = Title
+Roundify.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify.BackgroundTransparency = 1.000
+Roundify.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify.Size = UDim2.new(1, 24, 1, 24)
+Roundify.ZIndex = 71
+Roundify.Image = "rbxassetid://3570695787"
+Roundify.ImageColor3 = Color3.fromRGB(10, 10, 10)
+Roundify.ScaleType = Enum.ScaleType.Slice
+Roundify.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify.SliceScale = 0.120
+
+version.Name = "version"
+version.Parent = main
+version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+version.BackgroundTransparency = 1.000
+version.BorderSizePixel = 0
+version.Position = UDim2.new(0.708136857, 0, 0, 0)
+version.Size = UDim2.new(0, 82, 0, 27)
+version.ZIndex = 71
+version.Font = Enum.Font.TitilliumWeb
+version.Text = "v1.0.1"
+version.TextColor3 = Color3.fromRGB(255, 255, 255)
+version.TextScaled = true
+version.TextSize = 14.000
+version.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = main
+Noclip.BackgroundColor3 = Color3.fromRGB(14, 14, 14)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.141465098, 0, 0.178247735, 0)
+Noclip.Size = UDim2.new(0, 200, 0, 50)
+Noclip.ZIndex = 74
+Noclip.Font = Enum.Font.SourceSansSemibold
+Noclip.LineHeight = 1.070
+Noclip.Text = "Noclip (N)"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+Roundify_2.Name = "Roundify"
+Roundify_2.Parent = Noclip
+Roundify_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_2.BackgroundTransparency = 1.000
+Roundify_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_2.Size = UDim2.new(1, 24, 1, 24)
+Roundify_2.ZIndex = 71
+Roundify_2.Image = "rbxassetid://3570695787"
+Roundify_2.ImageColor3 = Color3.fromRGB(14, 14, 14)
+Roundify_2.ScaleType = Enum.ScaleType.Slice
+Roundify_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_2.SliceScale = 0.120
+
+Fly.Name = "Fly"
+Fly.Parent = main
+Fly.BackgroundColor3 = Color3.fromRGB(14, 14, 14)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.141465098, 0, 0.471299112, 0)
+Fly.Size = UDim2.new(0, 200, 0, 50)
+Fly.ZIndex = 71
+Fly.Font = Enum.Font.SourceSansSemibold
+Fly.LineHeight = 1.070
+Fly.Text = "Fly (M)"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+Roundify_3.Name = "Roundify"
+Roundify_3.Parent = Fly
+Roundify_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_3.BackgroundTransparency = 1.000
+Roundify_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_3.Size = UDim2.new(1, 24, 1, 24)
+Roundify_3.ZIndex = 71
+Roundify_3.Image = "rbxassetid://3570695787"
+Roundify_3.ImageColor3 = Color3.fromRGB(14, 14, 14)
+Roundify_3.ScaleType = Enum.ScaleType.Slice
+Roundify_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_3.SliceScale = 0.120
+
+Menu.Name = "Menu"
+Menu.Parent = main
+Menu.BackgroundColor3 = Color3.fromRGB(14, 14, 14)
+Menu.BorderSizePixel = 0
+Menu.Position = UDim2.new(0.141465098, 0, 0.767371655, 0)
+Menu.Size = UDim2.new(0, 200, 0, 50)
+Menu.ZIndex = 71
+Menu.Font = Enum.Font.SourceSansSemibold
+Menu.LineHeight = 1.070
+Menu.Text = "Menu (L)"
+Menu.TextColor3 = Color3.fromRGB(255, 255, 255)
+Menu.TextScaled = true
+Menu.TextSize = 14.000
+Menu.TextWrapped = true
+
+Roundify_4.Name = "Roundify"
+Roundify_4.Parent = Menu
+Roundify_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_4.BackgroundTransparency = 1.000
+Roundify_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_4.Size = UDim2.new(1, 24, 1, 24)
+Roundify_4.ZIndex = 71
+Roundify_4.Image = "rbxassetid://3570695787"
+Roundify_4.ImageColor3 = Color3.fromRGB(14, 14, 14)
+Roundify_4.ScaleType = Enum.ScaleType.Slice
+Roundify_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_4.SliceScale = 0.120
+
+Roundify_5.Name = "Roundify"
+Roundify_5.Parent = main
+Roundify_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Roundify_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roundify_5.BackgroundTransparency = 1.000
+Roundify_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+Roundify_5.Size = UDim2.new(1, 24, 1, 24)
+Roundify_5.ZIndex = 69
+Roundify_5.Image = "rbxassetid://3570695787"
+Roundify_5.ImageColor3 = Color3.fromRGB(24, 24, 24)
+Roundify_5.ScaleType = Enum.ScaleType.Slice
+Roundify_5.SliceCenter = Rect.new(100, 100, 100, 100)
+Roundify_5.SliceScale = 0.120
+
+Title_2.Name = "Title"
+Title_2.Parent = main
+Title_2.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(-0.0427046269, 0, -0.0181268882, 0)
+Title_2.Size = UDim2.new(0.773823738, 0, 0.117824771, 0)
+Title_2.ZIndex = 71
+Title_2.Font = Enum.Font.DenkOne
+Title_2.LineHeight = 1.050
+Title_2.Text = "  Atty Simple Menu"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Menu_2.Name = "Menu"
+Menu_2.Parent = main
+Menu_2.BackgroundColor3 = Color3.fromRGB(14, 14, 14)
+Menu_2.BorderSizePixel = 0
+Menu_2.Position = UDim2.new(0.141465098, 0, 0.767371655, 0)
+Menu_2.Size = UDim2.new(0, 200, 0, 50)
+Menu_2.ZIndex = 71
+Menu_2.Font = Enum.Font.SourceSansSemibold
+Menu_2.LineHeight = 1.070
+Menu_2.Text = "Menu (L)"
+Menu_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Menu_2.TextScaled = true
+Menu_2.TextSize = 14.000
+Menu_2.TextWrapped = true
+
+Fly_2.Name = "Fly"
+Fly_2.Parent = main
+Fly_2.BackgroundColor3 = Color3.fromRGB(14, 14, 14)
+Fly_2.BorderSizePixel = 0
+Fly_2.Position = UDim2.new(0.141465098, 0, 0.471299112, 0)
+Fly_2.Size = UDim2.new(0, 200, 0, 50)
+Fly_2.ZIndex = 71
+Fly_2.Font = Enum.Font.SourceSansSemibold
+Fly_2.LineHeight = 1.070
+Fly_2.Text = "Fly (M)"
+Fly_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly_2.TextScaled = true
+Fly_2.TextSize = 14.000
+Fly_2.TextWrapped = true
+
+Noclip_2.Name = "Noclip"
+Noclip_2.Parent = main
+Noclip_2.BackgroundColor3 = Color3.fromRGB(14, 14, 14)
+Noclip_2.BorderSizePixel = 0
+Noclip_2.Position = UDim2.new(0.141465098, 0, 0.178247735, 0)
+Noclip_2.Size = UDim2.new(0, 200, 0, 50)
+Noclip_2.ZIndex = 71
+Noclip_2.Font = Enum.Font.SourceSansSemibold
+Noclip_2.LineHeight = 1.070
+Noclip_2.Text = "Noclip (N)"
+Noclip_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip_2.TextScaled = true
+Noclip_2.TextSize = 14.000
+Noclip_2.TextWrapped = true
+
+-- Scripts:
+
+local function LHVSV_fake_script() -- main.menuscipt 
+	local script = Instance.new('LocalScript', main)
+
+	local Plr = game.Players.LocalPlayer
+	local frame = script.Parent
+	
+	
+	Plr:GetMouse () .KeyDown:Connect(function(K)
+		if K == "l" then
+			--script.Parent:TweenPosition(UDim2.new(0.502, 0,0.284, 0), "Out","Quad",0.5)
+			--Button Click-
+			--script.Parent.MouseButton1Click:Connect(function()
+			-- script here --
+			--end)
+	
+			--Toggle Part-
+			if frame.Visible == true then
+				frame.Visible = false
+			else
+				frame.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(LHVSV_fake_script)()
+local function DDFLUU_fake_script() -- main.noclip 
+	local script = Instance.new('LocalScript', main)
+
+	noclip = false
+	game:GetService('RunService').Stepped:Connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+	
+		end
+	end)
+	
+	local p = game.Players.LocalPlayer
+	local mo = p:GetMouse()
+	
+	mo.KeyDown:Connect(function(k)
+		if k == 'n' then
+			noclip = not noclip
+			p.Character.Humanoid:ChangeState(11)
+		end
+	end)
+end
+coroutine.wrap(DDFLUU_fake_script)()
+local function IIWCID_fake_script() -- main.fly 
+	local script = Instance.new('LocalScript', main)
+
+	repeat wait() 
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.HumanoidRootPart 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 50 
+	local speed = 0 
+	
+	function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+			plr.Character.Humanoid.PlatformStand = true 
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+				speed = speed+.5+(speed/maxspeed) 
+				if speed > maxspeed then 
+					speed = maxspeed 
+				end 
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+				speed = speed-1 
+				if speed < 0 then 
+					speed = 0 
+				end 
+			end 
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+			else 
+				bv.velocity = Vector3.new(0,0.1,0) 
+			end 
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+	end 
+	mouse.KeyDown:connect(function(key) 
+		if key:lower() == "m" then 
+			if flying then flying = false 
+			else 
+				flying = true 
+				Fly() 
+			end 
+		elseif key:lower() == "w" then 
+			ctrl.f = 1 
+		elseif key:lower() == "s" then 
+			ctrl.b = -1 
+		elseif key:lower() == "a" then 
+			ctrl.l = -1 
+		elseif key:lower() == "d" then 
+			ctrl.r = 1 
+		end 
+	end) 
+	mouse.KeyUp:connect(function(key) 
+		if key:lower() == "w" then 
+			ctrl.f = 0 
+		elseif key:lower() == "s" then 
+			ctrl.b = 0 
+		elseif key:lower() == "a" then 
+			ctrl.l = 0 
+		elseif key:lower() == "d" then 
+			ctrl.r = 0 
+		end 
+	end)
+	Fly()
+end
+coroutine.wrap(IIWCID_fake_script)()
